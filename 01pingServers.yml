@@ -8,11 +8,15 @@
       remote_user: ansible
     - name: changing somthing
       copy:
-        src: /opt
-        dest: /etc
-      ansible.builtin.apt:
-        name: apache2
-        state: present # Ensure the package is installed
+      src: /etc/sudoers
+      dest: /etc/sudoers.edit
+      name: apache2
+      state: present
+   - name: Start Apache service
+     service:
+     name: apache2
+      state: started
+      enabled: true
 ...
 
 
