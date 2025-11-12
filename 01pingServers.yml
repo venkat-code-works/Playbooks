@@ -7,7 +7,9 @@
       ping:
       remote_user: ansible
     - name: changing somthing
-      copy
+      copy:
+        src:
+        dest:
 ...
 
 
