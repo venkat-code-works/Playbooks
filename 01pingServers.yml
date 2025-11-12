@@ -8,8 +8,8 @@
       remote_user: ansible
     - name: changing somthing
       copy:
-        src:
-        dest:
+        src: /opt
+        dest: /etc
 ...
 
 
