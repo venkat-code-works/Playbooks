@@ -6,6 +6,8 @@
     - name: Test connection
       ping:
       remote_user: ansible
+  #tasks: 
+   # - name: triggering merge 
 ...
 
 
